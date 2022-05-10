@@ -10,6 +10,8 @@ import { MaterialModule } from './material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SignupComponent } from './signup/signup.component';
+import { MatSelectCountryModule } from '@angular-material-extensions/select-country';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { SignupComponent } from './signup/signup.component';
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
+    MatSelectCountryModule.forRoot('de'), // you can use 'br' | 'de' | 'en' | 'es' | 'fr' | 'hr' | 'it' | 'nl' | 'pt' --> MatSelectCountrySupportedLanguages
+             HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the application is stable
