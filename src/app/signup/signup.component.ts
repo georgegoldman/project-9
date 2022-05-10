@@ -7,11 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
+  hide = true;
+  checked = false;
+
   constructor() { }
 
-  onSubmit(): void {
+  onSubmit(): void {}
 
-  }
+  getEmailErrorMessage(){}
+  getUsernameErrorMessage(){}
+  getPasswordErrorMessage(){}
 
   ngOnInit(): void {
   }

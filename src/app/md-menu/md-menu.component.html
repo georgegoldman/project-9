@@ -1,0 +1,29 @@
+<button
+  mat-icon-button
+  [matMenuTriggerFor]="menu"
+  arial-label="Menu">
+  <mat-icon class="text-light">menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button
+    mat-menu-item>
+    <mat-icon>wallet</mat-icon>
+    <span>Connect Wallet</span>
+  </button>
+  <button
+    mat-menu-item>
+    <mat-icon>storefront</mat-icon>
+    <span>Market</span>
+  </button>
+  <button
+    mat-menu-item>
+    <mat-icon>square_foot</mat-icon>
+    <span>Plan</span>
+  </button>
+
+  <button
+    mat-menu-item>
+    <mat-icon>info</mat-icon>
+    <span>About us</span>
+  </button>
+</mat-menu>

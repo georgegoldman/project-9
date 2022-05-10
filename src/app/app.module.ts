@@ -12,13 +12,15 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SignupComponent } from './signup/signup.component';
 import { MatSelectCountryModule } from '@angular-material-extensions/select-country';
 import {HttpClientModule} from '@angular/common/http';
+import { MdMenuComponent } from './md-menu/md-menu.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    SignupComponent
+    SignupComponent,
+    MdMenuComponent
   ],
   imports: [
     BrowserModule,
