@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-signup',
@@ -8,16 +9,31 @@ import { Component, OnInit } from '@angular/core';
 export class SignupComponent implements OnInit {
 
   hide = true;
-  checked = false;
+
+  signUp = new FormGroup({
+    firstName: new FormControl('', Validators.required),
+    lastName: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [Validators.required, Validators.minLength(8)]),
+    termsCondition: new FormControl('', Validators.required),
+  })
 
   constructor() { }
 
-  onSubmit(): void {}
+  onSubmit(): void {
+    console.log(this.signUp.getRawValue())
+  }
 
-  getEmailErrorMessage(){}
-  getUsernameErrorMessage(){}
-  getPasswordErrorMessage(){}
+  getEmailErrorMessage(formControlName: string): string {
+    return this.signUp.controls[formControlName].hasError('email') ? 'please enter a proper email' : ''
+  }
 
+  getMinLinErrorMessage(formControlName: string): string {
+    return this.signUp.controls[formControlName].hasError('minlength') ? 'Your text is less than 8' : ''
+  }
+  getFieldRequiredErrorMessage(formControlName: string): string{
+    return this.signUp.controls[formControlName].hasError('required') ? 'Please this field is required' : ''
+  }
   ngOnInit(): void {
   }
 
