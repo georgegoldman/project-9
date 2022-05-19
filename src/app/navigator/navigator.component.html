@@ -1,0 +1,27 @@
+<nav class="fixed-top row">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col ">
+        <mat-toolbar id="menuTab" class="w-100 bg-white">
+          <div class="col-4">
+            <button mat-button class="" routerLink="/" >Cryptoinvest</button>
+          </div>
+          <div class="d-lg-block d-none col-4 ">
+            <button mat-button class="" >Prices</button>
+            <button mat-button class="" >Individuals</button>
+            <button mat-button class="" >Businesses</button>
+            <button mat-button class="" >Developer</button>
+            <button mat-button class="" >Company</button>
+          </div>
+          <div class="col-4 d-none d-lg-block d-flex justify-content-center ">
+            <button mat-button class="mx-3" routerLink="/signin">Sign in</button>
+            <a mat-stroked-button color="primary" href="/signin" target="_blank" >Get started</a>
+          </div>
+          <div class="d-block d-lg-none col-8 d-flex justify-content-end">
+            <app-md-menu></app-md-menu>
+          </div>
+        </mat-toolbar>
+      </div>
+    </div>
+  </div>
+ </nav>

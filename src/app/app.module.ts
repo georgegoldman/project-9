@@ -13,6 +13,9 @@ import { SignupComponent } from './signup/signup.component';
 import { MatSelectCountryModule } from '@angular-material-extensions/select-country';
 import {HttpClientModule} from '@angular/common/http';
 import { MdMenuComponent } from './md-menu/md-menu.component';
+import { SigninComponent } from './signin/signin.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavigatorComponent } from './navigator/navigator.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { MdMenuComponent } from './md-menu/md-menu.component';
     AppComponent,
     HomePageComponent,
     SignupComponent,
-    MdMenuComponent
+    MdMenuComponent,
+    SigninComponent,
+    FooterComponent,
+    NavigatorComponent
   ],
   imports: [
     BrowserModule,
