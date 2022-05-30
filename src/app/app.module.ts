@@ -16,6 +16,7 @@ import { MdMenuComponent } from './md-menu/md-menu.component';
 import { SigninComponent } from './signin/signin.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigatorComponent } from './navigator/navigator.component';
+import { PriceComponent } from './price/price.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { NavigatorComponent } from './navigator/navigator.component';
     MdMenuComponent,
     SigninComponent,
     FooterComponent,
-    NavigatorComponent
+    NavigatorComponent,
+    PriceComponent
   ],
   imports: [
     BrowserModule,
