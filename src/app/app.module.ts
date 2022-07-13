@@ -17,6 +17,8 @@ import { SigninComponent } from './signin/signin.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { PriceComponent } from './price/price.component';
+import { EventsComponent } from './events/events.component';
+import { SpecialEventsComponent } from './special-events/special-events.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { PriceComponent } from './price/price.component';
     SigninComponent,
     FooterComponent,
     NavigatorComponent,
-    PriceComponent
+    PriceComponent,
+    EventsComponent,
+    SpecialEventsComponent
   ],
   imports: [
     BrowserModule,
